@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&family=Bubblegum+Sans&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&family=Young+Serif&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&family=Bubblegum+Sans&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&family=Young+Serif&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: hsl(30, 38%, 92%); */
+  font-size: 14px;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  align-items: stretch;
+  flex-basis: 50%;
+}
+.imgDiv {
+  display: flex;
+  flex: 1;
+}
+picture {
+  display: flex;
+  flex: 1;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+.image {
+  height: 50vh;
+  max-inline-size: 100%;
+  block-size: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.whiteBoxDiv {
+  flex: 1;
+  width: 100%;
+  max-width: 300px;
+  min-height: 50vh;
+  padding: 50px;
+  background-color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.perfume {
+  font-family: "Montserrat", serif;
+  font-weight: light;
+}
+
+.topHeader {
+  margin-top: 15px;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 21%, 14%);
+}
+
+.article {
+  margin-top: 20px;
+  font-family: "Montserrat", serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.figures {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.firstFigure {
+  font-size: 25px;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.secondFigure {
+  font-size: 12px;
+  font-family: "Montserrat", serif;
+  text-decoration-line: line-through;
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  margin: auto;
+  width: 200px;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  gap: 8px;
+  border-radius: 7px;
+}
+.cartI,
+.img {
+  background-color: hsl(158, 36%, 37%);
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+@media (max-width: 659px) {
+  .container {
+    display: flex;
+    align-items: stretch;
+    flex-basis: 70%;
+    flex-direction: column;
+  }
+
+  .image {
+    
+    height: 50vh;
+    max-inline-size: 100%;
+    block-size: auto;
+    
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  picture {
+  
+    display: flex;
+    flex: 1;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  .whiteBoxDiv {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    min-height: 50vh;
+    padding: 50px;
+    background-color: #fff;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
